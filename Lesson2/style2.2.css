@@ -1,0 +1,29 @@
+
+.flex{
+    background-color: rgba(205, 255, 81, 0.41);
+    display: flex;
+    height: 500px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 10px ridge;
+    margin: 20px;
+}
+.box{
+    background-color: #cb2424;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    border: 2px solid;
+}
+.box:hover{
+    background-color: #ee4c4c;
+    border-radius: 50%;
+    transition: 300ms;
+    transform: scale(2.1);
+    border: 1px dashed gray;
+    display: flex;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #game-board {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .dot {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+<div id="game-board"></div>
+<script>
+    var dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.style.top = '50px';
+    dot.style.left = '50px';
+    var gameBoard = document.querySelector('#game-board');
+    gameBoard.appendChild(dot);
+    var direction = 'right';
+    function move() {
+        var top = parseInt(dot.style.top);
+        var left = parseInt(dot.style.left);
+        switch (direction) {
+            case 'up':
+                top -= 10;
+                break;
+            case 'down':
+                top += 10;
+                break;
+            case 'left':
+                left -= 10;
+                break;
+            case 'right':
+                left += 10;
+                break;
+        }
+        if (top < 0) top = 290;
+        if (top > 290) top = 0;
+        if (left < 0) left = 290;
+        if (left > 290) left = 0;
+        dot.style.top = top + 'px';
+        dot.style.left = left + 'px';
+    }
+    function changeDirection(e) {
+        switch (e.key) {
+            case 'ArrowUp':
+                direction = 'up';
+                break;
+            case 'ArrowDown':
+                direction = 'down';
+                break;
+            case 'ArrowLeft':
+                direction = 'left';
+                break;
+            case 'ArrowRight':
+                direction = 'right';
+                break;
+        }
+    }
+    setInterval(move, 200);
+    window.addEventListener('keydown', changeDirection);
+</script>
+</body>
+</html>

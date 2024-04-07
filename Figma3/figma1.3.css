@@ -1,0 +1,34 @@
+
+*{
+    margin: 0;
+}
+.head1,footer{
+    background-color: #D9D9D9;
+    height: 10vh;
+    width: 100%;
+}
+.head2{
+    background-color: #C2C4AC;
+    height: 20vh;
+    width: 100%;
+}
+.box1{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+}
+.box2{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+aside{
+    background-color: #9EA087;
+    height: 60vh;
+    width: 20vw;
+}
+section{
+    background-color: #78786F;
+    height: 60vh;
+    width: 80vw;
+}

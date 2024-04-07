@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            text-decoration: none;
+        }
+        .box-section{
+            /*text-decoration: none;*/
+            flex-direction: column;
+            font-size: 50px;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #red{
+            background-color: #cb1515;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<section id="red" class="box-section">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nihil ullam ut. Assumenda cum debitis
+        deleniti dolorem enim facere fuga in ipsam ipsum iusto laborum minima nemo porro, reprehenderit,
+        repudiandae.</p>
+    <a class="bot1" href="#yellow">&#9660;</a>
+</section>
+<section id="yellow" class="box-section">
+
+    <a class="top1" href="#red">&#9650;</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, eaque error eum id impedit inventore magni minus nisi non soluta tenetur velit, voluptates. Aspernatur, culpa esse expedita perferendis reiciendis soluta.</p>
+    <a class="bot2" href="#blue">&#9660;</a>
+</section>
+
+<section id="blue" class="box-section">
+
+    <a class="top2" href="#yellow">&#9650;</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestias nesciunt quidem repellat. Aliquid delectus enim iste molestias reprehenderit. Alias autem culpa hic magni molestiae nobis, non soluta vitae voluptatibus?</p>
+</section>
+
+</body>
+</html>
+
